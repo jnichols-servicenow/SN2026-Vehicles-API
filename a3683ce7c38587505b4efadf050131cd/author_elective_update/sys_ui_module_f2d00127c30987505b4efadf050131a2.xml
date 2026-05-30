@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Vehicle Management">7260c5a3c30987505b4efadf050131a2</application>
+        <filter/>
+        <name>All Vehicles</name>
+        <order>100</order>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles/>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 07:58:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f2d00127c30987505b4efadf050131a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Vehicles</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_ui_module_f2d00127c30987505b4efadf050131a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-30 07:58:33</sys_updated_on>
+        <table>x_snc_vehicles_api_vehicle</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</application>
+        <file_path/>
+        <instance_id>aec74fe32b7ade5c2fdcfcd2ce91bf64</instance_id>
+        <instance_name>jnictraining</instance_name>
+        <name>sys_ui_module_f2d00127c30987505b4efadf050131a2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Vehicle Management">7260c5a3c30987505b4efadf050131a2</application><filter/><name>All Vehicles</name><order>100</order><path/><path_relative_to_root>false</path_relative_to_root><roles/><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-30 07:58:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f2d00127c30987505b4efadf050131a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>All Vehicles</sys_name><sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package><sys_policy/><sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope><sys_update_name>sys_ui_module_f2d00127c30987505b4efadf050131a2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-30 07:58:33</sys_updated_on><table>x_snc_vehicles_api_vehicle</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>2025097833</payload_hash>
+        <record_name>All Vehicles</record_name>
+        <reverted_from/>
+        <source>eb687ce7c38587505b4efadf0501311f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 07:58:34</sys_created_on>
+        <sys_id>4f210167c30987505b4efadf05013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e77e458610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-30 07:58:34</sys_updated_on>
+        <type>Module</type>
+        <update_guid>cb2101676c098750f68371035fe2d10f</update_guid>
+        <update_guid_history>cb2101676c098750f68371035fe2d10f:2025097833</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 08:08:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>dcfbb615d6fb4fff8041033055710d29</sys_id>
+        <sys_metadata>f2d00127c30987505b4efadf050131a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Vehicles</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_scope_delete display_value="">17936fd1139e43e0930cebadc58d4a64</sys_scope_delete>
+        <sys_update_name>sys_ui_module_f2d00127c30987505b4efadf050131a2</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_f2d00127c30987505b4efadf050131a2">4f210167c30987505b4efadf05013110</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-30 08:08:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

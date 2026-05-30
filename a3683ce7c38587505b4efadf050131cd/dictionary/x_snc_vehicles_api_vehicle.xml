@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="dbab3ca3c3c587505b4efadf05013142" label="Vehicle" max_length="40" name="x_snc_vehicles_api_vehicle" type="collection">
+        <element label="Model" max_length="40" name="model" type="string"/>
+        <element label="City" max_length="50" name="city" type="string"/>
+        <element label="Country" max_length="50" name="country" type="string"/>
+        <element attributes="format=none" label="PIN" max_length="40" name="pin" type="integer"/>
+        <element label="VIN" max_length="20" name="vin" type="string"/>
+        <element attributes="format=none" label="Year" max_length="40" name="year" type="integer"/>
+        <element label="Make" max_length="40" name="make" type="string"/>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Description" max_length="200" name="description" type="string"/>
+        <element label="End date" max_length="40" name="end_date" type="glide_date"/>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_vehicles_api.integration" name="x_snc_vehicles_api.integration">ecbbbca3c3c587505b4efadf0501311f</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 07:34:39</sys_created_on>
+        <sys_id>bcbbbca3c3c587505b4efadf05013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ecbbbca3c3c587505b4efadf0501311f</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_embedded_help_role_bcbbbca3c3c587505b4efadf05013122</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-30 07:34:39</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

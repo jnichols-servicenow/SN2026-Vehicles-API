@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Vehicle Management">2d930d2fc30987505b4efadf05013158</application>
+        <assessment/>
+        <device_type/>
+        <filter table="x_snc_vehicles_api_vehicle">sys_id=-1<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="-1"/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Create vehicle record</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_vehicles_api_vehicle</name>
+        <order>200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>now/platform/record/x_snc_vehicles_api_vehicle/default-view/-1/params/module/a993016fc30987505b4efadf050131da/module/a993016fc30987505b4efadf050131da</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <route display_value="Record">4e9ade43fffcf2102fdcffffffffff59</route>
+        <screen display_value="New record">0e143062ff6532103cecffffffffff0b</screen>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 08:11:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a993016fc30987505b4efadf050131da</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create Vehicle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_app_module_a993016fc30987505b4efadf050131da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-30 08:32:35</sys_updated_on>
+        <timeline_page/>
+        <title>Create Vehicle</title>
+        <uncancelable>false</uncancelable>
+        <ux_list/>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>
