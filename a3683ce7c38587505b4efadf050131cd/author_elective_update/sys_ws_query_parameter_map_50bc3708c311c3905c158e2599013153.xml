@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter_map">
+    <sys_ws_query_parameter_map action="DELETE">
+        <sys_class_name>sys_ws_query_parameter_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 10:54:56</sys_created_on>
+        <sys_id>50bc3708c311c3905c158e2599013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7e7cf7c4c311c3905c158e2599013180</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_ws_query_parameter_map_50bc3708c311c3905c158e2599013153</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 10:54:56</sys_updated_on>
+        <web_service_operation display_value="Get Vehicles">aa3cf784c311c3905c158e25990131f3</web_service_operation>
+        <web_service_query_parameter display_value="year">7e7cf7c4c311c3905c158e2599013180</web_service_query_parameter>
+    </sys_ws_query_parameter_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</application>
+        <file_path/>
+        <instance_id>aec74fe32b7ade5c2fdcfcd2ce91bf64</instance_id>
+        <instance_name>jnictraining</instance_name>
+        <name>sys_ws_query_parameter_map_50bc3708c311c3905c158e2599013153</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter_map"><sys_ws_query_parameter_map action="INSERT_OR_UPDATE"><sys_class_name>sys_ws_query_parameter_map</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-01 10:54:56</sys_created_on><sys_id>50bc3708c311c3905c158e2599013153</sys_id><sys_mod_count>0</sys_mod_count><sys_name>7e7cf7c4c311c3905c158e2599013180</sys_name><sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package><sys_policy/><sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope><sys_update_name>sys_ws_query_parameter_map_50bc3708c311c3905c158e2599013153</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 10:54:56</sys_updated_on><web_service_operation display_value="Get Vehicles">aa3cf784c311c3905c158e25990131f3</web_service_operation><web_service_query_parameter display_value="year">7e7cf7c4c311c3905c158e2599013180</web_service_query_parameter></sys_ws_query_parameter_map></record_update>]]></payload>
+        <payload_hash>-1753525955</payload_hash>
+        <record_name>7e7cf7c4c311c3905c158e2599013180</record_name>
+        <reverted_from/>
+        <source>4d025d6fc3c987505b4efadf050131af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 10:54:56</sys_created_on>
+        <sys_id>86bc7708c311c3905c158e25990131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e82d2891a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 10:54:56</sys_updated_on>
+        <type>Scripted REST Query Parameter Associatio</type>
+        <update_guid>06bc7708fe11c3907ca3e63073c851e0</update_guid>
+        <update_guid_history>06bc7708fe11c3907ca3e63073c851e0:-1753525955</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 10:58:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_query_parameter_map">sys_ws_query_parameter_map</sys_db_object>
+        <sys_id>196fa11bd2c94a86807e3f142bfeab24</sys_id>
+        <sys_metadata>50bc3708c311c3905c158e2599013153</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7e7cf7c4c311c3905c158e2599013180</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_scope_delete display_value="">17936fd1139e43e0930cebadc58d4a64</sys_scope_delete>
+        <sys_update_name>sys_ws_query_parameter_map_50bc3708c311c3905c158e2599013153</sys_update_name>
+        <sys_update_version display_value="sys_ws_query_parameter_map_50bc3708c311c3905c158e2599013153">86bc7708c311c3905c158e25990131e1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 10:58:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

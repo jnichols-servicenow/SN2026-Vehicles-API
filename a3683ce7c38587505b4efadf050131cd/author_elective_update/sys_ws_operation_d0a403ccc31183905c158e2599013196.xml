@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes/>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>Get Vehicle</name>
+        <operation_script><![CDATA[(function process(request, response) {
+    var vin = request.pathParams.vin;
+    
+    var gr = new GlideRecord('x_snc_vehicles_api_vehicle');
+    if (gr.get('vin', vin)) {
+        return {
+            make: gr.getValue('make'),
+            model: gr.getValue('model'),
+            vin: gr.getValue('vin'),
+            year: gr.getValue('year')
+        };
+    }
+    
+    response.setStatus(404);
+    return { error: 'Vehicle not found' };
+})(request, response);]]></operation_script>
+        <operation_uri/>
+        <produces/>
+        <produces_customized>false</produces_customized>
+        <relative_path>/vehicle/{vin}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 06:50:32</sys_created_on>
+        <sys_id>d0a403ccc31183905c158e2599013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Vehicle</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_ws_operation_d0a403ccc31183905c158e2599013196</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 06:50:32</sys_updated_on>
+        <web_service_definition/>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</application>
+        <file_path/>
+        <instance_id>aec74fe32b7ade5c2fdcfcd2ce91bf64</instance_id>
+        <instance_name>jnictraining</instance_name>
+        <name>sys_ws_operation_d0a403ccc31183905c158e2599013196</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes/&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;Get Vehicle&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(request, response) {
+    var vin = request.pathParams.vin;
+    
+    var gr = new GlideRecord('x_snc_vehicles_api_vehicle');
+    if (gr.get('vin', vin)) {
+        return {
+            make: gr.getValue('make'),
+            model: gr.getValue('model'),
+            vin: gr.getValue('vin'),
+            year: gr.getValue('year')
+        };
+    }
+    
+    response.setStatus(404);
+    return { error: 'Vehicle not found' };
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri/&gt;&lt;produces/&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/vehicle/{vin}&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;true&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;support_trailing_slash&gt;false&lt;/support_trailing_slash&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-01 06:50:32&lt;/sys_created_on&gt;&lt;sys_id&gt;d0a403ccc31183905c158e2599013196&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get Vehicle&lt;/sys_name&gt;&lt;sys_package display_value="Vehicles API" source="x_snc_vehicles_api"&gt;a3683ce7c38587505b4efadf050131cd&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Vehicles API"&gt;a3683ce7c38587505b4efadf050131cd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_d0a403ccc31183905c158e2599013196&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-01 06:50:32&lt;/sys_updated_on&gt;&lt;web_service_definition/&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1884193592</payload_hash>
+        <record_name>Get Vehicle</record_name>
+        <reverted_from/>
+        <source>4d025d6fc3c987505b4efadf050131af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 06:50:32</sys_created_on>
+        <sys_id>0ac487ccc31183905c158e25990131e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e81f2c9530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 06:50:32</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>06c487cc46118390a5eebb67ab50a8e3</update_guid>
+        <update_guid_history>06c487cc46118390a5eebb67ab50a8e3:-1884193592</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 06:58:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>2a5a6310fab648ca8c1d76cf12dac584</sys_id>
+        <sys_metadata>d0a403ccc31183905c158e2599013196</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Vehicle</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_scope_delete display_value="">17936fd1139e43e0930cebadc58d4a64</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_d0a403ccc31183905c158e2599013196</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_d0a403ccc31183905c158e2599013196">0ac487ccc31183905c158e25990131e4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 06:58:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

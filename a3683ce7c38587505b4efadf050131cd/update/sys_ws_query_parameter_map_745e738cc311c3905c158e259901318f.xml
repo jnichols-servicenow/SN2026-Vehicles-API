@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter_map">
+    <sys_ws_query_parameter_map action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ws_query_parameter_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 11:02:02</sys_created_on>
+        <sys_id>745e738cc311c3905c158e259901318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cb1e374cc311c3905c158e25990131b0</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_ws_query_parameter_map_745e738cc311c3905c158e259901318f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 11:02:02</sys_updated_on>
+        <web_service_operation display_value="Get Vehicles">f7ed3bc8c311c3905c158e25990131a9</web_service_operation>
+        <web_service_query_parameter display_value="make">cb1e374cc311c3905c158e25990131b0</web_service_query_parameter>
+    </sys_ws_query_parameter_map>
+</record_update>
