@@ -5,26 +5,18 @@
         <consumes_customized>false</consumes_customized>
         <default_operation_uri/>
         <enforce_acl/>
-        <http_method>PUT</http_method>
-        <name>Update Vehicle</name>
+        <http_method>DELETE</http_method>
+        <name>Delete Vehicle</name>
         <operation_script><![CDATA[(function process(request, response) {
     var vin = request.pathParams.vin;
-    var body = request.body.data;
     
     var gr = new GlideRecord('x_snc_vehicles_api_vehicle');
-    if (!gr.get('vin', vin)) {
-        response.setStatus(404);
-        return { error: 'Vehicle not found' };
+    if (gr.get('vin', vin)) {
+        gr.deleteRecord();
     }
     
-    if (body.make !== undefined) gr.setValue('make', body.make);
-    if (body.model !== undefined) gr.setValue('model', body.model);
-    if (body.year !== undefined) gr.setValue('year', body.year);
-    if (body.country !== undefined) gr.setValue('country', body.country);
-    if (body.city !== undefined) gr.setValue('city', body.city);
-    gr.update();
-    
-    return { sys_id: gr.getUniqueValue(), vin: vin };
+    response.setStatus(204);
+    return;
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_snc_vehicles_api/vehicles_api/vehicle/{vin}</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
@@ -38,16 +30,16 @@
         <support_trailing_slash>false</support_trailing_slash>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-01 11:29:58</sys_created_on>
-        <sys_id>2f940c14c391c3905c158e25990131de</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Update Vehicle</sys_name>
+        <sys_created_on>2026-06-01 11:44:56</sys_created_on>
+        <sys_id>cb084450c3d1c3905c158e2599013176</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete Vehicle</sys_name>
         <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
-        <sys_update_name>sys_ws_operation_2f940c14c391c3905c158e25990131de</sys_update_name>
+        <sys_update_name>sys_ws_operation_cb084450c3d1c3905c158e2599013176</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-01 11:46:21</sys_updated_on>
+        <sys_updated_on>2026-06-01 11:44:56</sys_updated_on>
         <web_service_definition display_value="Vehicles API">e749b2ffc3c58f505c158e25990131be</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
