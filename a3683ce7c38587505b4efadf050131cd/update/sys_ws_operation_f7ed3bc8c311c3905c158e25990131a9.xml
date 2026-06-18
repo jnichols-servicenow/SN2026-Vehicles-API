@@ -3,7 +3,7 @@
         <active>true</active>
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri/>
+        <default_operation_uri>/api/x_snc_vehicles_api/vehicles_api/vehicles</default_operation_uri>
         <enforce_acl/>
         <http_method>GET</http_method>
         <name>Get Vehicles</name>
@@ -32,7 +32,7 @@
     
     return { vehicles: results };
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_snc_vehicles_api/vehicles_api/vehicles</operation_uri>
+        <operation_uri>/api/x_snc_vehicles_api/v1/vehicles_api/vehicles</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/vehicles</relative_path>
@@ -46,15 +46,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-01 11:00:34</sys_created_on>
         <sys_id>f7ed3bc8c311c3905c158e25990131a9</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Get Vehicles</sys_name>
         <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
         <sys_update_name>sys_ws_operation_f7ed3bc8c311c3905c158e25990131a9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-01 11:26:39</sys_updated_on>
+        <sys_updated_on>2026-06-16 23:48:32</sys_updated_on>
         <web_service_definition display_value="Vehicles API">e749b2ffc3c58f505c158e25990131be</web_service_definition>
-        <web_service_version/>
+        <web_service_version display_value="v1">10ad7785c3294f545b4efadf0501310f</web_service_version>
     </sys_ws_operation>
 </record_update>
