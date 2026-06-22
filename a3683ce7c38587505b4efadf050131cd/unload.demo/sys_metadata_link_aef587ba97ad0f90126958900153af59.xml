@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>17b785abc34987505b4efadf0501313e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_vehicles_api_vehicle">
+    <x_snc_vehicles_api_vehicle action="INSERT_OR_UPDATE">
+        <city>Birmingham</city>
+        <country>Great Britain</country>
+        <description>ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere</description>
+        <end_date>1967-12-20</end_date>
+        <make>Morris</make>
+        <model>Mini-Minor</model>
+        <pin>9904</pin>
+        <start_date>1963-08-03</start_date>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 08:27:50</sys_created_on>
+        <sys_id>17b785abc34987505b4efadf0501313e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 11:36:27</sys_updated_on>
+        <vin>LKUPFAFMXBA984511</vin>
+        <year>1963</year>
+    </x_snc_vehicles_api_vehicle>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-22 06:14:45</sys_created_on>
+        <sys_id>aef587ba97ad0f90126958900153af59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2026-05-30 18:27:50</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_metadata_link_aef587ba97ad0f90126958900153af59</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 06:14:45</sys_updated_on>
+        <tablename>x_snc_vehicles_api_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

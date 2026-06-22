@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>ff084dabc34987505b4efadf050131a7</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_vehicles_api_vehicle">
+    <x_snc_vehicles_api_vehicle action="INSERT_OR_UPDATE">
+        <city>Tokyo</city>
+        <country>Japan</country>
+        <description>vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean</description>
+        <end_date>1992-09-26</end_date>
+        <make>Toyota</make>
+        <model>Landcruiser</model>
+        <pin>3235</pin>
+        <start_date>1984-07-16</start_date>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 08:29:17</sys_created_on>
+        <sys_id>ff084dabc34987505b4efadf050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-30 08:29:17</sys_updated_on>
+        <vin>1D7CW5GKXAS838127</vin>
+        <year>1984</year>
+    </x_snc_vehicles_api_vehicle>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-22 06:14:45</sys_created_on>
+        <sys_id>f2f503fa97ad0f90126958900153af2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2026-05-30 18:29:17</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_metadata_link_f2f503fa97ad0f90126958900153af2e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 06:14:45</sys_updated_on>
+        <tablename>x_snc_vehicles_api_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>

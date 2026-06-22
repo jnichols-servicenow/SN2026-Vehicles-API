@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>6837c5e7c34987505b4efadf05013145</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_vehicles_api_vehicle">
+    <x_snc_vehicles_api_vehicle action="INSERT_OR_UPDATE">
+        <city>Detroit</city>
+        <country>United States</country>
+        <description>accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a</description>
+        <end_date/>
+        <make>Dodge</make>
+        <model>Ram 1500</model>
+        <pin>9632</pin>
+        <start_date>2021-07-29</start_date>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-30 08:25:28</sys_created_on>
+        <sys_id>6837c5e7c34987505b4efadf05013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-30 08:25:28</sys_updated_on>
+        <vin>1GTN1TEX1DZ268860</vin>
+        <year>2021</year>
+    </x_snc_vehicles_api_vehicle>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-22 06:14:45</sys_created_on>
+        <sys_id>eef503fa97ad0f90126958900153af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2026-05-30 18:25:28</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_metadata_link_eef503fa97ad0f90126958900153af18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 06:14:45</sys_updated_on>
+        <tablename>x_snc_vehicles_api_vehicle</tablename>
+    </sys_metadata_link>
+</record_update>
