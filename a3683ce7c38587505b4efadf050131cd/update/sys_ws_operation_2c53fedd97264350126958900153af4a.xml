@@ -11,7 +11,7 @@
     var vin = request.pathParams.vin;
     var body = request.body.data;
     
-    var gr = new GlideRecord('x_snc_vehicles_api_vehicle');
+    var gr = new GlideRecordSecure('x_snc_vehicles_api_vehicle');
     if (!gr.get('vin', vin)) {
         response.setStatus(404);
         return { error: 'Vehicle not found' };
@@ -40,14 +40,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-06 06:05:08</sys_created_on>
         <sys_id>2c53fedd97264350126958900153af4a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Update Vehicle (v2)</sys_name>
         <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
         <sys_update_name>sys_ws_operation_2c53fedd97264350126958900153af4a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-06 06:11:13</sys_updated_on>
+        <sys_updated_on>2026-08-06 07:53:25</sys_updated_on>
         <web_service_definition display_value="Vehicles API">e749b2ffc3c58f505c158e25990131be</web_service_definition>
         <web_service_version display_value="v2">9c533edd97264350126958900153aff8</web_service_version>
     </sys_ws_operation>
