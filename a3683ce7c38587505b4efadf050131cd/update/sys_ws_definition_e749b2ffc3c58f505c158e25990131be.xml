@@ -6,25 +6,25 @@
         <consumes_customized>false</consumes_customized>
         <default_version>v1</default_version>
         <doc_link/>
-        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <enforce_acl>84b7299997e20350126958900153af99</enforce_acl>
         <is_versioned>true</is_versioned>
         <name>Vehicles API</name>
         <namespace>x_snc_vehicles_api</namespace>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
         <service_id>vehicles_api</service_id>
-        <short_description/>
+        <short_description>.</short_description>
         <sys_class_name>sys_ws_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-31 11:22:18</sys_created_on>
         <sys_id>e749b2ffc3c58f505c158e25990131be</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Vehicles API</sys_name>
         <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
         <sys_update_name>sys_ws_definition_e749b2ffc3c58f505c158e25990131be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-18 23:07:45</sys_updated_on>
+        <sys_updated_on>2026-08-06 02:28:40</sys_updated_on>
     </sys_ws_definition>
 </record_update>
