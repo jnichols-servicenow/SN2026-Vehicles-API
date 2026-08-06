@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/x_snc_vehicles_api/vehicles_api/vehicle/{vin}</default_operation_uri>
+        <enforce_acl>84b7299997e20350126958900153af99</enforce_acl>
+        <http_method>PATCH</http_method>
+        <name>Update Vehicle (v2)</name>
+        <operation_script><![CDATA[(function process(request, response) {
+    var vin = request.pathParams.vin;
+    var body = request.body.data;
+    
+    var gr = new GlideRecord('x_snc_vehicles_api_vehicle');
+    if (!gr.get('vin', vin)) {
+        response.setStatus(404);
+        return { error: 'Vehicle not found' };
+    }
+    
+    if (body.make !== undefined) gr.setValue('make', body.make);
+    if (body.model !== undefined) gr.setValue('model', body.model);
+    if (body.year !== undefined) gr.setValue('year', body.year);
+    if (body.country !== undefined) gr.setValue('country', body.country);
+    if (body.city !== undefined) gr.setValue('city', body.city);
+    gr.update();
+    
+    return { sys_id: gr.getUniqueValue(), vin: vin };
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_vehicles_api/v2/vehicles_api/vehicle/{vin}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/vehicle/{vin}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-06 06:05:08</sys_created_on>
+        <sys_id>6c53fedd97264350126958900153af70</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Vehicle (v2)</sys_name>
+        <sys_package display_value="Vehicles API" source="x_snc_vehicles_api">a3683ce7c38587505b4efadf050131cd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles API">a3683ce7c38587505b4efadf050131cd</sys_scope>
+        <sys_update_name>sys_ws_operation_6c53fedd97264350126958900153af70</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-06 06:11:36</sys_updated_on>
+        <web_service_definition display_value="Vehicles API">e749b2ffc3c58f505c158e25990131be</web_service_definition>
+        <web_service_version display_value="v2">9c533edd97264350126958900153aff8</web_service_version>
+    </sys_ws_operation>
+</record_update>
