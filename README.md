@@ -1,8 +1,8 @@
-# Vehicles API — Scripted REST APIs in ServiceNow
+# Vehicles API – Scripted REST APIs in ServiceNow
 
-This repository contains the **Vehicles API** scoped application (`x_snc_vehicles_api`), the teaching app that accompanies the **Scripted REST APIs in ServiceNow** YouTube series. It's a deliberately simple application — a single `Vehicle` table with some demo data — that gives us something concrete to build an API around.
+This repository contains the **Vehicles API** scoped application (`x_snc_vehicles_api`), the teaching app that accompanies the **Scripted REST APIs in ServiceNow** YouTube series. It's a deliberately simple application – a single `Vehicle` table with some demo data – that gives us something concrete to build an API around.
 
-You import it into your own ServiceNow **Personal Developer Instance (PDI)** and follow along with the videos as we build, secure, and harden a Scripted REST API from scratch.
+You fork it, import it into your own ServiceNow **Personal Developer Instance (PDI)**, and follow along with the videos as we build, secure, and harden a Scripted REST API from scratch.
 
 ▶️ **YouTube playlist:** https://www.youtube.com/playlist?list=PLrhqGp3sUzhvp1sfgP8OZjXRxKOP_cyBU
 
@@ -12,11 +12,11 @@ You import it into your own ServiceNow **Personal Developer Instance (PDI)** and
 
 ## What the application contains
 
-- **One table** — `Vehicle` (`x_snc_vehicles_api_vehicle`) with the fields `make`, `model`, `year`, `vin`, `country`, and `city`.
-- **Demo data** — a small set of vehicle records so your API has something to query.
-- **Roles** — a few user and integration roles used later in the series when we apply access controls.
+- **One table** – `Vehicle` (`x_snc_vehicles_api_vehicle`) with the fields `make`, `model`, `year`, `vin`, `country`, and `city`.
+- **Demo data** – a small set of vehicle records so your API has something to query.
+- **Roles** – a few user and integration roles used later in the series when we apply access controls.
 
-Everything the API itself needs — the web service, its resources, access controls, OAuth configuration, and so on — is added across the series, video by video.
+Everything the API itself needs – the web service, its resources, access controls, OAuth configuration, and so on – is added across the series, video by video.
 
 ---
 
@@ -30,7 +30,7 @@ This means you can:
 
 - **Start from the beginning** and build everything yourself, or
 - **Jump in partway** by importing the branch for the video you want to start from, or
-- **Catch up** if you fall behind — import the branch for the video you're on and carry on from there.
+- **Catch up** if you fall behind – import the branch for the video you're on and carry on from there.
 
 `main` holds the latest available state of the application.
 
@@ -43,13 +43,36 @@ This means you can:
 You'll need:
 
 - A **ServiceNow Personal Developer Instance (PDI)**. If you don't have one, you can request one for free from the [ServiceNow Developer Program](https://developer.servicenow.com).
-- **Read access to this repository** (it's public, so anonymous read access is fine).
+- A **GitHub account**, so you can fork this repository. A free account is all you need.
+- A **GitHub personal access token** with read and write access to your fork. ServiceNow Studio uses this in place of a password when it connects to GitHub.
 
 ---
 
 ## Installing the application using ServiceNow Studio
 
-The application is imported from source control directly into ServiceNow Studio. The full, official, step-by-step procedure is documented by ServiceNow here:
+### Step 1 – Fork this repository
+
+Don't connect your instance to this repository directly. Fork it to your own GitHub account first, and connect your instance to *your fork*.
+
+Forking matters because:
+
+- **You get write access.** As you follow along, ServiceNow Studio commits your work back to source control. You can't commit to this repository, but you can commit to your own fork.
+- **Your work stays yours.** Your commits, branches, and experiments live in your account and don't affect anyone else.
+- **You still get the checkpoints.** A fork includes the numbered stage branches, so you can jump in or catch up at any point in the series.
+
+To fork:
+
+1. Sign in to GitHub and open this repository.
+2. Select **Fork** (top right of the page).
+3. Choose your own account as the **owner** of the fork.
+4. **Clear the "Copy the `main` branch only" checkbox.** If you leave it selected, you'll only get `main` and none of the numbered stage branches.
+5. Select **Create fork**.
+
+You now have your own copy of the repository at `https://github.com/<your-github-username>/SN2026-Vehicles-API`.
+
+### Step 2 – Import your fork into ServiceNow Studio
+
+The application is imported from source control into ServiceNow Studio. The full, official, step-by-step procedure is documented by ServiceNow here:
 
 📖 **[Import an app from source control](https://www.servicenow.com/docs/r/application-development/servicenow-studio-classic/sns-sc-import-app-source-control.html?content-lang=en-US)**
 
@@ -57,12 +80,13 @@ In short, the process is:
 
 1. Open **ServiceNow Studio** in your PDI.
 2. Choose to **import an application from source control**.
-3. Provide this repository's URL:
+3. Provide the URL of **your fork** – not this repository:
    ```
-   https://github.com/jnichols-servicenow/SN2026-Vehicles-API
+   https://github.com/<your-github-username>/SN2026-Vehicles-API
    ```
-4. Select the **branch** you want to import — for example, `main` to get the latest state, or a numbered stage branch (such as `stage-05-get-resources`) to start from a specific video.
-5. Complete the import. The Vehicles API application will then be available in your instance.
+4. Supply your GitHub credentials. Use your GitHub username, and your **personal access token** in place of a password. GitHub no longer accepts account passwords for this kind of connection.
+5. Select the **branch** you want to import – for example, `main` to get the latest state, or a numbered stage branch (such as `stage-05-get-resources`) to start from a specific video.
+6. Complete the import. The Vehicles API application will then be available in your instance.
 
 Refer to the ServiceNow documentation linked above for the exact menu locations, credential requirements, and screenshots.
 
@@ -75,6 +99,16 @@ Because the application is linked to source control after import, you can move b
 This is handy if you want to skip ahead to a later topic, or roll back to an earlier known-good state.
 
 > Switching branches changes the application files in your instance to match the selected branch. If you've made your own changes, commit or stash them first so they aren't lost.
+
+---
+
+## Keeping your fork up to date
+
+This repository is still growing, and existing branches may be updated as the series is refined. Your fork won't pick those changes up on its own.
+
+To bring your fork into line with this repository, open your fork on GitHub and use **Sync fork** on the branch you want to update. Once your fork is updated, apply the branch again in ServiceNow Studio to pull the changes into your instance.
+
+> If you've committed your own work to a branch, syncing may report a conflict. The simplest approach for a teaching repository like this one is to keep your own work on branches you've created yourself, and leave the numbered stage branches untouched so they stay easy to sync.
 
 ---
 
@@ -96,6 +130,6 @@ The application is intended to ship with demo vehicle records so your API has so
 
 ## Feedback
 
-Found an issue with the application or a branch? Open an issue on this repository. For questions about the content itself, the comments on the corresponding YouTube video are a good place to ask.
+Found an issue with the application or a branch? Open an issue on **this** repository rather than on your fork, so everyone following the series can see it. For questions about the content itself, the comments on the corresponding YouTube video are a good place to ask.
 
 Have fun developing!
